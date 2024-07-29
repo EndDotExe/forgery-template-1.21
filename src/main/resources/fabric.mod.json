@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "forgery",
+	"version": "${version}",
+	"name": "Forgery",
+	"description": "The enemy ascended beyond your control or was that all your intention",
+	"authors": [
+		"EndDotExe"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/forgery/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.end.forgery.Forgery"
+		],
+		"client": [
+			"net.end.forgery.ForgeryClient"
+		],
+		"fabric-datagen": [
+			"net.end.forgery.ForgeryDataGenerator"
+		]
+	},
+	"mixins": [
+		"forgery.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
