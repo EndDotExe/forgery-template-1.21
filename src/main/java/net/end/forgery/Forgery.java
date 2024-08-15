@@ -12,7 +12,7 @@ public class Forgery implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registeritemgroups();
 		ModItems.registerModItems();
 	}
 }
