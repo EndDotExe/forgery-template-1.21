@@ -1,5 +1,6 @@
 package net.end.forgery;
 
+import net.end.forgery.item.ModItemGroups;
 import net.end.forgery.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
