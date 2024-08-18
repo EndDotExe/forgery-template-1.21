@@ -1,6 +1,7 @@
 package net.end.forgery;
 
 import net.end.forgery.item.ModItemGroups;
+import net.end.forgery.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -14,7 +15,7 @@ public class Forgery implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroups.preregistration();
-		registerModItems();
+		ModItems.registerModItems();
+
 	}
 }

@@ -16,9 +16,9 @@ public class ModItemGroups {
         FORGERY_GROUP = Registry.register(Registries.ITEM_GROUP,
                 Identifier.of(Forgery.MOD_ID, "smithing"),
                 FabricItemGroup.builder().displayName(Text.translatable("itemgroup.smithing"))
-                        .icon(() -> new ItemStack(ModItems.SMITHING_TEMPLATE)).entries((displayContext, entries) -> {
-                            entries.add(ModItems.SMITHING_TEMPLATE);
-                            entries.add(ModItems.SMITHING_TEMPLATE_TWO);
+                        .icon(() -> new ItemStack(ModItems.SMITHING_TEMPLATE_EX)).entries((displayContext, entries) -> {
+                            entries.add(ModItems.SMITHING_TEMPLATE_EX);
+                            entries.add(ModItems.SMITHING_TEMPLATE_PH);
 
                         }).build());
     }
