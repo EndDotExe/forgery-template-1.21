@@ -1,11 +1,12 @@
 package net.end.forgery;
 
 import net.end.forgery.item.ModItemGroups;
-import net.end.forgery.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import static net.end.forgery.item.ModItems.registerModItems;
 
 public class Forgery implements ModInitializer {
 	public static final String MOD_ID = "forgery";
@@ -13,7 +14,7 @@ public class Forgery implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroups.registeritemgroups();
-		ModItems.registerModItems();
+		ModItemGroups.preregistration();
+		registerModItems();
 	}
 }

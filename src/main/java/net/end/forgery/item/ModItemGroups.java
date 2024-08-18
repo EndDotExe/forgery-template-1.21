@@ -14,11 +14,11 @@ public class ModItemGroups {
 
     static {
         FORGERY_GROUP = Registry.register(Registries.ITEM_GROUP,
-                Identifier.of(Forgery.MOD_ID, "smithing_template"),
-                FabricItemGroup.builder().displayName(Text.translatable("itemgroup.smithing_template"))
+                Identifier.of(Forgery.MOD_ID, "smithing"),
+                FabricItemGroup.builder().displayName(Text.translatable("itemgroup.smithing"))
                         .icon(() -> new ItemStack(ModItems.SMITHING_TEMPLATE)).entries((displayContext, entries) -> {
                             entries.add(ModItems.SMITHING_TEMPLATE);
-                            entries.add(ModItems.SMITHING_TEMPLATE_2);
+                            entries.add(ModItems.SMITHING_TEMPLATE_TWO);
 
                         }).build());
     }
@@ -28,6 +28,6 @@ public class ModItemGroups {
         Forgery.LOGGER.info("Registering Item Groups For " +Forgery.MOD_ID);
     }
 
-    public static void registeritemgroups() {
+    public static void preregistration() {
     }
 }

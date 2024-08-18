@@ -1,6 +1,6 @@
 {
   "item.forgery.smithing_template": "Smithing Template",
-  "item.forgery.smithing_template_2": "Smithing Template the second",
+  "item.forgery.smithing_template_two": "Smithing Template the second",
 
-  "itemgroup.smithing_template": "Forgery Items"
+  "itemgroup.smithing": "Forgery Items"
 }

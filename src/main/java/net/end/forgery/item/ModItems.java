@@ -11,11 +11,11 @@ import net.minecraft.util.Identifier; //Use the correct package
 
 public class ModItems {
     public static final Item SMITHING_TEMPLATE = registerItem(new Item(new Item.Settings()));
-    public static final Item SMITHING_TEMPLATE_2 = registerItem(new Item(new Item.Settings()));
+    public static final Item SMITHING_TEMPLATE_TWO = registerItem(new Item(new Item.Settings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(SMITHING_TEMPLATE);
-        entries.add(SMITHING_TEMPLATE_2);
+        entries.add(SMITHING_TEMPLATE_TWO);
     }
 
     private static Item registerItem(Item item) {
