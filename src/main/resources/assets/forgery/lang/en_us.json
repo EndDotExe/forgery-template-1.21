@@ -2,5 +2,7 @@
   "item.forgery.smithing_template_ex": "Smithing Template",
   "item.forgery.smithing_template_ph": "Smithing Template",
 
+  "block.forgery.smithing_table_ex": "Netherite Smithing Table",
+
   "itemgroup.smithing": "Forgery Items"
 }

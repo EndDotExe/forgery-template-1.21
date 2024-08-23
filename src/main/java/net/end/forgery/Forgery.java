@@ -1,5 +1,6 @@
 package net.end.forgery;
 
+import net.end.forgery.block.ModBlocks;
 import net.end.forgery.item.ModItemGroups;
 import net.end.forgery.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -16,6 +17,6 @@ public class Forgery implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
-
+		ModBlocks.registerModBlocks();
 	}
 }
