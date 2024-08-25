@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "forgery:block/smithing_template_ex"
+    "all": "forgery:block/smithing_table_ex"
   }
 }
