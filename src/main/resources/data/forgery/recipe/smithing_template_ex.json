@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft_redstone"
+},
+"base": {
+  "item": "minecraft:netherite_pickaxe"
+},
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond"
+  },
+  "template": {
+    "item": "forgery:smithing_template_ex"
+  }
+}

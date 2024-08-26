@@ -1,6 +1,7 @@
 package net.end.forgery.item;
 
 import net.end.forgery.Forgery;
+import net.end.forgery.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -19,6 +20,7 @@ public class ModItemGroups {
                         .icon(() -> new ItemStack(ModItems.SMITHING_TEMPLATE_EX)).entries((displayContext, entries) -> {
                             entries.add(ModItems.SMITHING_TEMPLATE_EX);
                             entries.add(ModItems.SMITHING_TEMPLATE_PH);
+                            entries.add(ModBlocks.SMITHING_TABLE_EX);
 
                         }).build());
     }

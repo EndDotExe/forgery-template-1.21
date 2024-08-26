@@ -17,7 +17,7 @@ public class ModBlocks {
     public static final Block SMITHING_TABLE_EX = registerBlock("smithing_table_ex",
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.NETHERITE)));
-//adding a new block with the netherite sound group
+//adding a new block with the netherite sound groupe
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -16,6 +16,8 @@ public class Forgery implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
