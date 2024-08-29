@@ -32,7 +32,7 @@ public class ModBlocks {
     public static void registerModBlocks() {
         Forgery.LOGGER.info("Registering Mod Blocks for" + Forgery.MOD_ID);
 
-        ItemGroupEvents .modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+        ItemGroupEvents .modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
             entries.add(ModBlocks.SMITHING_TABLE_EX);
         });
     } // adding the block to an item group
