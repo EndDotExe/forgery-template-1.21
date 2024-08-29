@@ -3,7 +3,7 @@
   "category": "tools",
   "key":{
   "#": {
-    "item": "minecraft:prismarine_shards"
+    "item": "minecraft:prismarine_shard"
    },
    "@": {
      "item": "minecraft:prismarine_crystals"
@@ -14,8 +14,8 @@
 
   },
   "pattern": [
-    "@@@",
-    " $ ",
+    "@$@",
+    " # ",
     " # "
   ],
   "result": {
