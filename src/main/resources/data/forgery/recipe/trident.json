@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "key":{
+  "#": {
+    "item": "minecraft:prismarine_shards"
+   },
+   "@": {
+     "item": "minecraft:prismarine_crystals"
+   }
+
+  },
+  "pattern": [
+    "@@@",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:trident"
+  }
+}
