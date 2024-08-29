@@ -7,12 +7,15 @@
    },
    "@": {
      "item": "minecraft:prismarine_crystals"
-   }
+   },
+    "$": {
+      "item": "minecraft:diamond"
+    }
 
   },
   "pattern": [
     "@@@",
-    " # ",
+    " $ ",
     " # "
   ],
   "result": {
