@@ -22,6 +22,7 @@ public class ModItemGroups {
                             entries.add(ModItems.SMITHING_TEMPLATE_PH);
                             entries.add(ModBlocks.SMITHING_TABLE_EX);
 
+
                         }).build());
     }
 

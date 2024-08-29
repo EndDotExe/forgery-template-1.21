@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "tools",
+  "category": "equipment",
   "key":{
   "#": {
     "item": "minecraft:prismarine_shard"
@@ -14,9 +14,9 @@
 
   },
   "pattern": [
-    "@$@",
-    " # ",
-    " # "
+    " @$",
+    " #@",
+    "#  "
   ],
   "result": {
     "count": 1,
