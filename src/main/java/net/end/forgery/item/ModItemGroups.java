@@ -21,7 +21,7 @@ public class ModItemGroups {
                             entries.add(ModItems.SMITHING_TEMPLATE_EX);
                             entries.add(ModItems.SMITHING_TEMPLATE_PH);
                             entries.add(ModBlocks.SMITHING_TABLE_EX);
-
+                            entries.add(ModItems.LAPIS_EXCAVATOR_PICKAXE);
 
                         }).build());
     }

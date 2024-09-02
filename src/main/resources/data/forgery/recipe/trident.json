@@ -1,21 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
-  "key":{
-  "#": {
-    "item": "minecraft:prismarine_shard"
-   },
-   "@": {
-     "item": "minecraft:prismarine_crystals"
-   },
-    "$": {
+  "key": {
+    "#": {
+     "item": "minecraft:prismarine_shard"
+    },
+    "X": {
+     "item": "minecraft:sea_lantern"
+    },
+    "Y": {
       "item": "minecraft:diamond"
     }
 
   },
   "pattern": [
-    " @$",
-    " #@",
+    " XY",
+    " #X",
     "#  "
   ],
   "result": {

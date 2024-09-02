@@ -2,7 +2,6 @@ package net.end.forgery.item;
 
 import net.end.forgery.Forgery;
 import net.end.forgery.item.custom.VeinminerToolItem;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -23,6 +22,10 @@ public class ModItems {
 
     public static void registerModItems() {
         Forgery.LOGGER.info("Registering Mod Items for " + Forgery.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+            entries.add(LAPIS_EXCAVATOR_PICKAXE);
+        });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(SMITHING_TEMPLATE_EX);

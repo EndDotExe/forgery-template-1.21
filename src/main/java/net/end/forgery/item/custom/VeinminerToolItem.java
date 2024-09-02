@@ -14,25 +14,7 @@ import java.util.Map;
 public class VeinminerToolItem extends Item {
     private static final Map<Block, Block> VEINMINERTOOL_MAP =
             Map.of(
-                    Blocks.COAL_ORE, Blocks.AIR,
-                    Blocks.COPPER_ORE, Blocks.AIR,
-                    Blocks.DIAMOND_ORE, Blocks.AIR,
-                    Blocks.DEEPSLATE_COAL_ORE, Blocks.AIR,
-                    Blocks.DEEPSLATE_DIAMOND_ORE, Blocks.AIR,
-                    Blocks.DEEPSLATE_COPPER_ORE, Blocks.AIR,
-                    Blocks.DEEPSLATE_EMERALD_ORE, Blocks.AIR,
-                    Blocks.DEEPSLATE_GOLD_ORE, Blocks.AIR,
-                    Blocks.DEEPSLATE_IRON_ORE, Blocks.AIR,
-                    Blocks.DEEPSLATE_LAPIS_ORE, Blocks.AIR,
-                    Blocks.DEEPSLATE_REDSTONE_ORE, Blocks.AIR,
-                    Blocks.EMERALD_ORE, Blocks.AIR,
-                    Blocks.GOLD_ORE, Blocks.AIR,
-                    Blocks.IRON_ORE, Blocks.AIR,
-                    Blocks.LAPIS_ORE, Blocks.AIR,
-                    Blocks.REDSTONE_ORE, Blocks.AIR,
-                    Blocks.NETHER_GOLD_ORE, Blocks.AIR,
-                    Blocks.NETHER_QUARTZ_ORE, Blocks.AIR,
-                    Blocks.ANCIENT_DEBRIS, Blocks.AIR,
+                    Blocks.COAL_ORE, Blocks.AIR
 
                     );
 
@@ -49,7 +31,7 @@ public class VeinminerToolItem extends Item {
             if(!world.isClient()) {
                 world.setBlockState(context.getBlockPos(), VEINMINERTOOL_MAP.get(clickedBlock).getDefaultState());
 
-            world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.BLOCKS, 1.0F, 2.0F);
+            world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_AMETHYST_BLOCK_PLACE, SoundCategory.BLOCKS, 5.0F, 1.0F);
             }
         }
 
