@@ -4,6 +4,7 @@ import net.end.forgery.Forgery;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.SmithingTableBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -15,7 +16,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block SMITHING_TABLE_EX = registerBlock("smithing_table_ex",
-            new Block(AbstractBlock.Settings.create().strength(4f)
+            new Block(SmithingTableBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.NETHERITE)));
 //adding a new block with the netherite sound groupe
 
