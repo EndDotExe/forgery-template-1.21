@@ -9,4 +9,7 @@ public class PickaxeItem extends MiningToolItem {
     public PickaxeItem(ToolMaterial material, Item.Settings settings) {
         super(material, BlockTags.PICKAXE_MINEABLE, settings);
     }
+
+
 }
+
