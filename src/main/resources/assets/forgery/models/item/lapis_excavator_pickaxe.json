@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "forgery:item/redstone_pickaxe"
+    "layer0": "forgery:item/lapis_pickaxe"
   }
 }
