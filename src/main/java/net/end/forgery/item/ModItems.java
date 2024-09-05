@@ -5,14 +5,16 @@ import net.end.forgery.item.custom.VeinminerToolItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.SmithingTemplateItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item SMITHING_TEMPLATE_EX = registerItem("smithing_template_ex", new Item(new Item.Settings()));
+    public static final SmithingTemplateItem SMITHING_TEMPLATE_EX = (SmithingTemplateItem) registerItem("smithing_template_ex", new Item(new Item.Settings()));
 
-    public static final Item SMITHING_TEMPLATE_PH = registerItem("smithing_template_ph", new Item(new Item.Settings()));
+    public static final SmithingTemplateItem SMITHING_TEMPLATE_PH = (SmithingTemplateItem) registerItem("smithing_template_ph", new Item(new Item.Settings()));
 
     public static final Item LAPIS_EXCAVATOR_PICKAXE = registerItem("lapis_excavator_pickaxe", new VeinminerToolItem(new Item.Settings()));
 

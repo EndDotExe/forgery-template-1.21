@@ -4,7 +4,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
@@ -14,17 +13,22 @@ import java.util.Map;
 
 public class VeinminerToolItem extends Item {
     private static final Map<Block, Block> VEINMINERTOOL_MAP =
-            Map.of(
-                    Blocks.COAL_ORE, Blocks.AIR,
-                    Blocks.DIAMOND_ORE, Blocks.AIR,
-                    Blocks.IRON_ORE, Blocks.AIR,
-                    Blocks.COPPER_ORE, Blocks.AIR,
-                    Blocks.GOLD_ORE, Blocks.AIR,
-                    Blocks.LAPIS_ORE, Blocks.AIR,
-                    Blocks.EMERALD_ORE, Blocks.AIR,
-                    Blocks.DEEPSLATE_COAL_ORE, Blocks.AIR,
-                    Blocks.DEEPSLATE_DIAMOND_ORE, Blocks.AIR,
-                    Blocks.DEEPSLATE_IRON_ORE, Blocks.AIR
+            Map.ofEntries(
+                    Map.entry(Blocks.COAL_ORE, Blocks.AIR),
+                    Map.entry(Blocks.DIAMOND_ORE, Blocks.AIR),
+                    Map.entry(Blocks.IRON_ORE, Blocks.AIR),
+                    Map.entry(Blocks.COPPER_ORE, Blocks.AIR),
+                    Map.entry(Blocks.GOLD_ORE, Blocks.AIR),
+                    Map.entry(Blocks.LAPIS_ORE, Blocks.AIR),
+                    Map.entry(Blocks.EMERALD_ORE, Blocks.AIR),
+                    Map.entry(Blocks.DEEPSLATE_COAL_ORE, Blocks.AIR),
+                    Map.entry(Blocks.DEEPSLATE_DIAMOND_ORE, Blocks.AIR),
+                    Map.entry(Blocks.DEEPSLATE_IRON_ORE, Blocks.AIR),
+                    Map.entry(Blocks.DEEPSLATE_GOLD_ORE, Blocks.AIR),
+                    Map.entry(Blocks.DEEPSLATE_REDSTONE_ORE, Blocks.AIR),
+                    Map.entry(Blocks.DEEPSLATE_EMERALD_ORE, Blocks.AIR),
+                    Map.entry(Blocks.DEEPSLATE_LAPIS_ORE, Blocks.AIR),
+                    Map.entry(Blocks.DEEPSLATE_COPPER_ORE, Blocks.AIR)
 
             );
 
