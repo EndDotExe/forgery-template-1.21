@@ -11,26 +11,23 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup FORGERY_GROUP;
-
-    static {
-        FORGERY_GROUP = Registry.register(Registries.ITEM_GROUP,
-                Identifier.of(Forgery.MOD_ID, "smithing"),
-                FabricItemGroup.builder().displayName(Text.translatable("itemgroup.smithing"))
-                        .icon(() -> new ItemStack(ModItems.SMITHING_TEMPLATE_EX)).entries((displayContext, entries) -> {
-                            entries.add(ModItems.SMITHING_TEMPLATE_EX);
-                            entries.add(ModItems.SMITHING_TEMPLATE_PH);
-                            entries.add(ModBlocks.SMITHING_TABLE_EX);
-                            entries.add(ModItems.LAPIS_EXCAVATOR_PICKAXE);
-
-                        }).build());
-    }
+    public static final ItemGroup ALL_FORGERY_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Forgery.MOD_ID, "all_forgery_items"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.SMITHING_TEMPLATE_EX))
+                    .displayName(Text.translatable("itemgroup.forgery.all_forgery_items"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.SMITHING_TEMPLATE_EX);
+                        entries.add(ModItems.SMITHING_TEMPLATE_PH);
+                        entries.add(ModItems.LAPIS_EXCAVATOR_PICKAXE);
+                        entries.add(ModBlocks.SMITHING_TABLE_EX);
 
 
-    public static void RegisterItemGroups (){
-        Forgery.LOGGER.info("Registering Item Groups For " +Forgery.MOD_ID);
-    }
+                    })
+                    .build());
 
-    public static void preregistration() {
+
+
+    public static void registerItemGroups() {
+        Forgery.LOGGER.info("Registerin Item Groups For " + Forgery.MOD_ID);
     }
 }
