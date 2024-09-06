@@ -3,12 +3,16 @@ package net.end.forgery.item.custom;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
-import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
+
+import java.util.List;
 import java.util.Map;
 
 public class VeinminerToolItem extends Item {
@@ -50,5 +54,14 @@ public class VeinminerToolItem extends Item {
         }
 
         return ActionResult.SUCCESS;
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        tooltip.add(Text.translatable("tooltip.forgery.veinminertool"));
+        tooltip.add(Text.translatable("tooltip.forgery.veinminertool_two"));
+        tooltip.add(Text.translatable("tooltip.forgery.veinminertool_three"));
+        tooltip.add(Text.translatable("tooltip.forgery.veinminertool_four"));
+        super.appendTooltip(stack, context, tooltip, type);
     }
 }

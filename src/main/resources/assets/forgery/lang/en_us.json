@@ -9,5 +9,10 @@
 
   "block.forgery.smithing_table_ex": "Netherite Smithing Table",
 
+  "tooltip.forgery.veinminertool":  "§7Right click an ore to §b§lVEINMINE,",
+  "tooltip.forgery.veinminertool_two":  "§7Destroying all ores of the same",
+  "tooltip.forgery.veinminertool_three":  "§7variety connected to the ore",
+  "tooltip.forgery.veinminertool_four":  "§7which was interacted with.",
+
   "itemgroup.forgery.all_forgery_items": "All Forgery Items"
 }
