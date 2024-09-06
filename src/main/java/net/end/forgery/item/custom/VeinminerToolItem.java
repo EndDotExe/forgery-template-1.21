@@ -2,6 +2,8 @@ package net.end.forgery.item.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
@@ -58,10 +60,20 @@ public class VeinminerToolItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.translatable("tooltip.forgery.veinminertool"));
-        tooltip.add(Text.translatable("tooltip.forgery.veinminertool_two"));
-        tooltip.add(Text.translatable("tooltip.forgery.veinminertool_three"));
-        tooltip.add(Text.translatable("tooltip.forgery.veinminertool_four"));
+        if (Screen.hasShiftDown()){
+            tooltip.add(Text.translatable("tooltip.forgery.veinminertool"));
+            tooltip.add(Text.translatable("tooltip.forgery.veinminertool_two"));
+            tooltip.add(Text.translatable("tooltip.forgery.veinminertool_three"));
+            tooltip.add(Text.translatable("tooltip.forgery.veinminertool_four"));
+            tooltip.add(Text.translatable("tooltip.forgery.veinminertool_notworkingyet"));
+        } else {
+            tooltip.add(Text.translatable("tooltip.forgery.veinminertool_pressshiftdumbass"));
+        }
+
         super.appendTooltip(stack, context, tooltip, type);
+    }
+
+    public Item attributeModifiers(AttributeModifiersComponent attributeModifiers) {
+        return null;
     }
 }
