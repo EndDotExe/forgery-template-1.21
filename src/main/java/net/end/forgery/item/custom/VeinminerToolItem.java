@@ -4,9 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.component.type.AttributeModifiersComponent;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -17,7 +15,7 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.Map;
 
-public class VeinminerToolItem extends Item {
+public class VeinminerToolItem extends PickaxeItem {
     private static final Map<Block, Block> VEINMINERTOOL_MAP =
             Map.ofEntries(
                     Map.entry(Blocks.COAL_ORE, Blocks.AIR),
@@ -38,8 +36,8 @@ public class VeinminerToolItem extends Item {
 
             );
 
-    public VeinminerToolItem(Settings settings) {
-        super(settings);
+    public VeinminerToolItem(ToolMaterial toolMaterial, Settings settings) {
+        super(toolMaterial, settings);
     }
 
     @Override

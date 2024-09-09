@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "addition": {
-    "item": "minecraft_emerald"
+    "item": "minecraft:emerald"
 },
 "base": {
   "item": "minecraft:netherite_pickaxe"

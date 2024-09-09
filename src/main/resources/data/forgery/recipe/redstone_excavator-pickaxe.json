@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "addition": {
-    "item": "minecraft_redstone"
+    "item": "minecraft:redstone"
 },
 "base": {
   "item": "minecraft:netherite_pickaxe"

@@ -27,6 +27,7 @@ public class ModItemGroups {
                         entries.add(ModItems.EMERALD_EXCAVATOR_PICKAXE);
                         entries.add(ModItems.LAPIS_EXCAVATOR_PICKAXE);
                         entries.add(ModItems.BEDEVILLED_BLADE);
+                        entries.add(ModItems.FRIGID_FLAMBERGE);
 
 
                     })

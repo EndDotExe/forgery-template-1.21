@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "addition": {
-    "item": "minecraft_amethyst_shard"
+    "item": "minecraft:amethyst_shard"
 },
 "base": {
   "item": "minecraft:netherite_pickaxe"
