@@ -2,10 +2,13 @@
   "item.forgery.smithing_template_ex": "Smithing Template",
   "item.forgery.smithing_template_ph": "Smithing Template",
   "item.forgery.smithing_template_gc": "Smithing Template",
+  "item.forgery.smithing_template_fl": "Smithing Template",
+  "item.forgery.smithing_template_wi": "Smithing Template",
   "item.forgery.lapis_excavator_pickaxe": "Lapis Excavator Pickaxe",
   "item.forgery.amethyst_excavator_pickaxe": "Amethyst Excavator Pickaxe",
   "item.forgery.redstone_excavator_pickaxe": "Redstone Excavator Pickaxe",
   "item.forgery.emerald_excavator_pickaxe": "Emerald Excavator Pickaxe",
+  "item.forgery.bedevilled_blade": "Bedevilled Blade",
 
   "block.forgery.smithing_table_ex": "Netherite Smithing Table",
 

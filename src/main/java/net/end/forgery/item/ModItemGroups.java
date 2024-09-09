@@ -19,11 +19,14 @@ public class ModItemGroups {
                         entries.add(ModItems.SMITHING_TEMPLATE_EX);
                         entries.add(ModItems.SMITHING_TEMPLATE_PH);
                         entries.add(ModItems.SMITHING_TEMPLATE_GC);
+                        entries.add(ModItems.SMITHING_TEMPLATE_FL);
+                        entries.add(ModItems.SMITHING_TEMPLATE_WI);
                         entries.add(ModBlocks.SMITHING_TABLE_EX);
                         entries.add(ModItems.AMETHYST_EXCAVATOR_PICKAXE);
                         entries.add(ModItems.REDSTONE_EXCAVATOR_PICKAXE);
                         entries.add(ModItems.EMERALD_EXCAVATOR_PICKAXE);
                         entries.add(ModItems.LAPIS_EXCAVATOR_PICKAXE);
+                        entries.add(ModItems.BEDEVILLED_BLADE);
 
 
                     })
