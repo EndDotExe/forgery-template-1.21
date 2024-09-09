@@ -5,16 +5,16 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 
-public class PoisonSwordItem extends SwordItem {
+public class SlownessSwordItem extends SwordItem {
 
-    public PoisonSwordItem(ToolMaterial toolMaterial, Settings settings) {
+    public SlownessSwordItem(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings);
     }
 
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 200, 4), attacker);
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 150, 3), attacker);
         return super.postHit(stack, target, attacker);
     }
 }

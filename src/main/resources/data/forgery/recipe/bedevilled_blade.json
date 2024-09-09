@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:spider_eye"
+},
+"base": {
+  "item": "minecraft:netherite_sword"
+},
+  "result": {
+    "count": 1,
+    "id": "forgery:bedevilled_blade"
+  },
+  "template": {
+    "item": "forgery:smithing_template_wi"
+  }
+}
