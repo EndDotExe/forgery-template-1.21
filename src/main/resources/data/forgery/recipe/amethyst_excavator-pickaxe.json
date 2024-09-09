@@ -1,14 +1,14 @@
 {
   "type": "minecraft:smithing_transform",
   "addition": {
-    "item": "minecraft_redstone"
+    "item": "minecraft_amethyst_shard"
 },
 "base": {
   "item": "minecraft:netherite_pickaxe"
 },
   "result": {
     "count": 1,
-    "id": "minecraft:diamond"
+    "id": "forgery:amethyst_excavator_pickaxe"
   },
   "template": {
     "item": "forgery:smithing_template_ex"

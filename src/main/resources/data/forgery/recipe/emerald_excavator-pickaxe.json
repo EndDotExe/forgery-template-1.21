@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft_emerald"
+},
+"base": {
+  "item": "minecraft:netherite_pickaxe"
+},
+  "result": {
+    "count": 1,
+    "id": "forgery:emerald_excavator_pickaxe"
+  },
+  "template": {
+    "item": "forgery:smithing_template_ex"
+  }
+}
