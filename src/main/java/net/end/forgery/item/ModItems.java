@@ -20,7 +20,7 @@ public class ModItems {
     public static final Item REDSTONE_EXCAVATOR_PICKAXE = registerItem("redstone_excavator_pickaxe", (new net.minecraft.item.PickaxeItem(ToolMaterials.NETHERITE, (new Item.Settings()).rarity(Rarity.EPIC).attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.NETHERITE, 1.0F, -2.8F )))));
     public static final Item EMERALD_EXCAVATOR_PICKAXE = registerItem("emerald_excavator_pickaxe",(new net.minecraft.item.PickaxeItem(ToolMaterials.NETHERITE, (new Item.Settings()).rarity(Rarity.EPIC).attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.NETHERITE, 1.0F, -2.8F )))));
     public static final Item BEDEVILLED_BLADE = registerItem("bedevilled_blade", new net.end.forgery.item.custom.PoisonSwordItem(ToolMaterials.NETHERITE, (new Item.Settings()).rarity(Rarity.RARE).attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.0F))));
-    public static final Item FRIGID_FLAMBERGE = registerItem("frgid_flamberge", new net.end.forgery.item.custom.SlownessSwordItem(ToolMaterials.NETHERITE, (new Item.Settings()).rarity(Rarity.RARE).attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.0F))));
+    public static final Item FRIGID_FLAMBERGE = registerItem("frigid_flamberge", new net.end.forgery.item.custom.SlownessSwordItem(ToolMaterials.NETHERITE, (new Item.Settings()).rarity(Rarity.RARE).attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.0F))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Forgery.MOD_ID, name), item);

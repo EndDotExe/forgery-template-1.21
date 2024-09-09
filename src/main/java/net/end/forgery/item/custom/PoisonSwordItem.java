@@ -14,7 +14,7 @@ public class PoisonSwordItem extends SwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 200, 4), attacker);
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 60, 4), attacker);
         return super.postHit(stack, target, attacker);
     }
 }

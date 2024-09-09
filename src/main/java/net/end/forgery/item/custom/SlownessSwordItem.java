@@ -14,7 +14,7 @@ public class SlownessSwordItem extends SwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 150, 3), attacker);
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 80, 3), attacker);
         return super.postHit(stack, target, attacker);
     }
 }
