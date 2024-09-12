@@ -10,11 +10,14 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+// Adding a new item group for all the custom items in the mod
+
 public class ModItemGroups {
     public static final ItemGroup ALL_FORGERY_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Forgery.MOD_ID, "all_forgery_items"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.SMITHING_TEMPLATE_EX))
                     .displayName(Text.translatable("itemgroup.forgery.all_forgery_items"))
+// Adding the modded items to the "all_forgery_items" group
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.SMITHING_TEMPLATE_EX);
                         entries.add(ModItems.SMITHING_TEMPLATE_PH);

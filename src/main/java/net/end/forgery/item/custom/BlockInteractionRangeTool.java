@@ -6,11 +6,10 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.ActionResult;
 
 public class BlockInteractionRangeTool extends ToolItem {
-
-
     public BlockInteractionRangeTool(ToolMaterial material, Settings settings) {
         super(material, settings);
     }
+
 
 
 }

@@ -11,10 +11,10 @@ public class PoisonSwordItem extends SwordItem {
         super(toolMaterial, settings);
     }
 
-
+// Making the sword inflict the poison debuff on struck enemies for 2 seconds (40 ticks)
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 60, 4), attacker);
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 40, 3), attacker);
         return super.postHit(stack, target, attacker);
     }
 }

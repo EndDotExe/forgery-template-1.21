@@ -5,16 +5,16 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 
-public class SlownessSwordItem extends SwordItem {
+public class WeaknessSwordItem extends SwordItem {
 
-    public SlownessSwordItem(ToolMaterial toolMaterial, Settings settings) {
+    public WeaknessSwordItem(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings);
     }
 
-// Making the sword inflict the slowness debuff on enemies for 2 seconds (40 ticks) when they're hit
+// Making the sword inflict the weakness debuff on enemies for 4 seconds (80 ticks) when they're hit
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 40, 2), attacker);
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 80, 3), attacker);
         return super.postHit(stack, target, attacker);
     }
 }

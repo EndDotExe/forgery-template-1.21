@@ -10,6 +10,7 @@
   "item.forgery.emerald_excavator_pickaxe": "Emerald Excavator Pickaxe",
   "item.forgery.blighted_blade": "Blighted Blade",
   "item.forgery.frigid_flamberge": "Frigid Flamberge",
+  "item.forgery.edge_of_frailty": "Edge of Frailty",
 
   "block.forgery.smithing_table_ex": "Netherite Smithing Table",
 
@@ -17,7 +18,7 @@
   "tooltip.forgery.veinminertool_two":  "§7Destroying all ores of the same",
   "tooltip.forgery.veinminertool_three":  "§7variety connected to the ore",
   "tooltip.forgery.veinminertool_four":  "§7which was interacted with.",
-  "tooltip.forgery.veinminertool_notworkingyet":  "§4THIS FEATURE DOESN'T WORK YET!",
+  "tooltip.forgery.veinminertool_notworkingyet":  "§c§lTHIS FEATURE DOESN'T WORK YET!",
   "tooltip.forgery.veinminertool_pressshiftdumbass": "§7Hold §e§lShift §7for tool info",
 
   "itemgroup.forgery.all_forgery_items": "All Forgery Items"

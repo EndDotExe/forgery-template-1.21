@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.Map;
 
-public class VeinminerToolItem extends PickaxeItem {
+public class VeinminerToolItem extends ToolItem {
     private static final Map<Block, Block> VEINMINERTOOL_MAP =
             Map.ofEntries(
                     Map.entry(Blocks.COAL_ORE, Blocks.AIR),
@@ -32,7 +32,10 @@ public class VeinminerToolItem extends PickaxeItem {
                     Map.entry(Blocks.DEEPSLATE_REDSTONE_ORE, Blocks.AIR),
                     Map.entry(Blocks.DEEPSLATE_EMERALD_ORE, Blocks.AIR),
                     Map.entry(Blocks.DEEPSLATE_LAPIS_ORE, Blocks.AIR),
-                    Map.entry(Blocks.DEEPSLATE_COPPER_ORE, Blocks.AIR)
+                    Map.entry(Blocks.DEEPSLATE_COPPER_ORE, Blocks.AIR),
+                    Map.entry(Blocks.NETHER_GOLD_ORE, Blocks.AIR),
+                    Map.entry(Blocks.NETHER_QUARTZ_ORE, Blocks.AIR),
+                    Map.entry(Blocks.ANCIENT_DEBRIS, Blocks.AIR)
 
             );
 
@@ -55,7 +58,7 @@ public class VeinminerToolItem extends PickaxeItem {
 
         return ActionResult.SUCCESS;
     }
-
+// Adding a custom tooltip to the tool
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         if (Screen.hasShiftDown()){
@@ -64,6 +67,7 @@ public class VeinminerToolItem extends PickaxeItem {
             tooltip.add(Text.translatable("tooltip.forgery.veinminertool_three"));
             tooltip.add(Text.translatable("tooltip.forgery.veinminertool_four"));
             tooltip.add(Text.translatable("tooltip.forgery.veinminertool_notworkingyet"));
+// Giving the tool a tooltip that requires the SHIFT key to be held down to display the information
         } else {
             tooltip.add(Text.translatable("tooltip.forgery.veinminertool_pressshiftdumbass"));
         }
