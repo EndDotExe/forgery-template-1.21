@@ -31,6 +31,7 @@ public class ModItemGroups {
                         entries.add(ModItems.LAPIS_EXCAVATOR_PICKAXE);
                         entries.add(ModItems.BLIGHTED_BLADE);
                         entries.add(ModItems.FRIGID_FLAMBERGE);
+                        entries.add(ModItems.EDGE_OF_FRAILTY);
 
 
                     })
