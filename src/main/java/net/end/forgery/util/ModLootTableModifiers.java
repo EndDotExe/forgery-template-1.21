@@ -6,10 +6,10 @@ public class ModLootTableModifiers {
 
 
     public static void modifyLootTables() {
-        LootTableEvents.MODIFY.register(() -> {
 
 
 
-        });
+
+        ;
     }
 }

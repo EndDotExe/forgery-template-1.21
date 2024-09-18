@@ -61,7 +61,7 @@
 		{
 			"from": [7, 11, 5],
 			"to": [8, 31, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [6, 15, 6]},
+			"rotation": {"angle": 0, "axis": "x", "origin": [6, 15, 6]},
 			"faces": {
 				"north": {"uv": [5, 0, 5.5, 10], "texture": "#0"},
 				"east": {"uv": [0, 0, 2.5, 10], "texture": "#0"},
@@ -99,12 +99,17 @@
 			"rotation": [111, 86, 165],
 			"translation": [0, 0, 4.75]
 		},
+		"gui": {
+			"rotation": [-78.34, 46.66, 89.11],
+			"translation": [3.25, -3.75, 6],
+			"scale": [0.61, 0.61, 0.61]
+		},
 		"head": {
 			"rotation": [-124, 9, 0],
 			"translation": [4.25, 15, 7]
 		},
 		"fixed": {
-			"rotation": [0, 90, 0],
+			"rotation": [-26.05, 89.45, 26.1],
 			"translation": [0, -9.5, -1]
 		}
 	},
