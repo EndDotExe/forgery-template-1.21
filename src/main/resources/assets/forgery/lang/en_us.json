@@ -12,6 +12,7 @@
   "item.forgery.frigid_flamberge": "Frigid Flamberge",
   "item.forgery.edge_of_frailty": "Edge of Frailty",
   "item.forgery.echo_trident": "Echo Trident",
+  "item.forgery.netherite_shield": "Netherite Shield",
 
   "block.forgery.smithing_table_ex": "Netherite Smithing Table",
 
@@ -22,5 +23,5 @@
   "tooltip.forgery.veinminertool_notworkingyet":  "§c§lTHIS FEATURE DOESN'T WORK YET!",
   "tooltip.forgery.veinminertool_pressshiftdumbass": "§7Hold §e§lShift §7for tool info",
 
-  "itemgroup.forgery.all_forgery_items": "All Forgery Items"
+  "itemgroup.forgery.all_forgery_items": "Forgery Items"
 }
