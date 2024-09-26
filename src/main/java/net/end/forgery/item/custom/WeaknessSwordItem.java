@@ -11,7 +11,7 @@ public class WeaknessSwordItem extends SwordItem {
         super(toolMaterial, settings);
     }
 
-// Making the sword inflict the weakness debuff on enemies for 4 seconds (80 ticks) when they're hit
+    // Making the sword inflict the weakness debuff with a modifier of 3 on enemies for 4 seconds (80 ticks) when they're hit
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         target.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 80, 3), attacker);

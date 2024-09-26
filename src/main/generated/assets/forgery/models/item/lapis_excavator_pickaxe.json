@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "forgery:item/lapis_excavator_pickaxe"
+  }
+}

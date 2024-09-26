@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "forgery:item/ntehrite_shield",
-		"particle": "forgery:item/ntehrite_shield"
+		"0": "forgery:item/netherite_shield",
+		"particle": "forgery:item/netherite_shield"
 	},
 	"elements": [
 		{

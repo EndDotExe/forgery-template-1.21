@@ -33,6 +33,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FRIGID_FLAMBERGE);
                         entries.add(ModItems.EDGE_OF_FRAILTY);
                         entries.add(ModItems.ECHO_TRIDENT);
+                        entries.add(ModItems.NETHERITE_SHIELD);
 
 
                     })

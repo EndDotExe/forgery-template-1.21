@@ -3,8 +3,8 @@
 	"ambientocclusion": false,
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "forgery:item/echo_trident",
-		"particle": "forgery:item/echo_trident"
+		"0": "forgery:item/echo_trident2",
+		"particle": "forgery:item/echo_trident2"
 	},
 	"elements": [
 		{
