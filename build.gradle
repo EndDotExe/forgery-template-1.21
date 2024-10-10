@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.7-SNAPSHOT'
+	id 'fabric-loom' version '1.7.4'
 	id 'maven-publish'
 }
 
@@ -17,13 +17,13 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	maven {
-	}
-	jamieswhiteshirt {
 		url "https://maven.jamieswhiteshirt.com/libs-release"
 		content {
 			includeGroup "com.jamieswhiteshirt"
 		}
 	}
+	mavenCentral()
+	gradlePluginPortal()
 }
 
 
@@ -40,7 +40,7 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
- 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.version}")
+	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:2.5.0")
 }
 
 processResources {
