@@ -16,7 +16,7 @@ public class ModItems {
     public static final Item SMITHING_TEMPLATE_WI = registerItem("smithing_template_wi", SmithingTemplateItem.createNetheriteUpgrade());
     public static final Item SMITHING_TEMPLATE_FL = registerItem("smithing_template_fl", SmithingTemplateItem.createNetheriteUpgrade());
     public static final Item LAPIS_EXCAVATOR_PICKAXE = registerItem("lapis_excavator_pickaxe", (new VeinminerToolItemTwo(ToolMaterials.NETHERITE, (new Item.Settings()).rarity(Rarity.EPIC).attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.NETHERITE, 1.0F, -2.8F)))));
-    public static final Item AMETHYST_EXCAVATOR_PICKAXE = registerItem("amethyst_excavator_pickaxe", (new net.end.forgery.item.custom.BlockInteractionRangeTool(ToolMaterials.NETHERITE, (new Item.Settings()).rarity(Rarity.EPIC).attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.NETHERITE, 1.0F, -2.8F )))));
+    public static final Item AMETHYST_EXCAVATOR_PICKAXE = registerItem("amethyst_excavator_pickaxe", (new BlockInteractionRangeTool(ToolMaterials.NETHERITE, (new Item.Settings()).rarity(Rarity.EPIC).attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.NETHERITE, 1.0F, -2.8F )))));
     public static final Item REDSTONE_EXCAVATOR_PICKAXE = registerItem("redstone_excavator_pickaxe", (new net.minecraft.item.PickaxeItem(ToolMaterials.NETHERITE, (new Item.Settings()).rarity(Rarity.EPIC).attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.NETHERITE, 1.0F, -2.8F )))));
     public static final Item EMERALD_EXCAVATOR_PICKAXE = registerItem("emerald_excavator_pickaxe",(new net.minecraft.item.PickaxeItem(ToolMaterials.NETHERITE, (new Item.Settings()).rarity(Rarity.EPIC).attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.NETHERITE, 1.0F, -2.8F )))));
     public static final Item BLIGHTED_BLADE = registerItem("blighted_blade", (new net.end.forgery.item.custom.PoisonSwordItem(ToolMaterials.NETHERITE, (new Item.Settings()).rarity(Rarity.UNCOMMON).attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 3, -1.0F)))));
@@ -56,3 +56,4 @@ public class ModItems {
         });
     }
 }
+
