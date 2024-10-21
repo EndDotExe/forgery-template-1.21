@@ -1,6 +1,5 @@
-package net.end.forgery.item;
+package net.end.forgery.item.custom;
 
-import net.minecraft.item.Item;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 

@@ -1,6 +1,7 @@
 package net.end.forgery.item;
 
 import net.end.forgery.Forgery;
+import net.end.forgery.item.custom.BlockInteractionRangeTool;
 import net.end.forgery.item.custom.VeinminerToolItemTwo;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
