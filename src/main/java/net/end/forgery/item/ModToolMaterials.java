@@ -1,21 +1,16 @@
 package net.end.forgery.item;
 
+import java.util.function.Supplier;
 import com.google.common.base.Suppliers;
 import net.minecraft.block.Block;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 
-import java.util.Objects;
-import java.util.function.Supplier;
-
 public enum ModToolMaterials implements ToolMaterial {
-    FORGERY_UPGRADED (BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 10000, 10.0F, 5.0F, 0, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.NETHERITE_INGOT});
-    });
+    FORGERY_UPGRADED (BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 10000, 10.0F, 5.0F, 0, () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
@@ -24,14 +19,20 @@ public enum ModToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    private ModToolMaterials(final TagKey inverseTag, final int itemDurability, final float miningSpeed, final float attackDamage, final int enchantability, final Supplier repairIngredient) {
+    ModToolMaterials(
+            final TagKey<Block> inverseTag,
+            final int itemDurability,
+            final float miningSpeed,
+            final float attackDamage,
+            final int enchantability,
+            final Supplier<Ingredient> repairIngredient
+    ) {
         this.inverseTag = inverseTag;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
         this.enchantability = enchantability;
-        Objects.requireNonNull(repairIngredient);
-        this.repairIngredient = (Supplier<Ingredient>) Suppliers.memoize(repairIngredient::get);
+        this.repairIngredient = Suppliers.memoize(repairIngredient::get);
     }
 
     public int getDurability() {
@@ -55,6 +56,6 @@ public enum ModToolMaterials implements ToolMaterial {
     }
 
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return this.repairIngredient.get();
     }
 }
