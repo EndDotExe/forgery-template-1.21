@@ -15,10 +15,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.SMITHING_TABLE_EX);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.SMITHING_TABLE_EX);
     }
 }

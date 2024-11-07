@@ -14,7 +14,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.SMITHING_TABLE_EX);
+
 
     }
 }
