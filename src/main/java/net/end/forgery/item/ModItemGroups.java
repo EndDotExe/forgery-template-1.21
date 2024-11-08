@@ -1,7 +1,6 @@
 package net.end.forgery.item;
 
 import net.end.forgery.Forgery;
-import net.end.forgery.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -33,6 +32,8 @@ public class ModItemGroups {
                         entries.add(ModItems.EDGE_OF_FRAILTY);
                         entries.add(ModItems.ECHO_TRIDENT);
                         entries.add(ModItems.NETHERITE_SHIELD);
+                        entries.add(ModItems.ENDER_BOW);
+                        entries.add(ModItems.SWIRLING_WINDS);
 
 
                     })

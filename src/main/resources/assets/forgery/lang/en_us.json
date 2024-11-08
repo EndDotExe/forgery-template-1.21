@@ -13,6 +13,8 @@
   "item.forgery.edge_of_frailty": "Edge of Frailty",
   "item.forgery.echo_trident": "Echo Trident",
   "item.forgery.netherite_shield": "Netherite Shield",
+  "item.forgery.ender_bow": "End Bow (placeholder name)",
+  "item.forgery.swirling_winds": "Swirling Winds",
 
   "block.forgery.smithing_table_ex": "Netherite Smithing Table",
 
@@ -23,5 +25,5 @@
   "tooltip.forgery.veinminertool_notworkingyet":  "§c§lTHIS FEATURE DOESN'T WORK YET!",
   "tooltip.forgery.veinminertool_pressshiftdumbass": "§7Hold §e§lShift §7for tool info",
 
-  "itemgroup.forgery.all_forgery_items": "Forgery Items"
+  "itemgroup.forgery.all_forgery_items": "Forgery"
 }

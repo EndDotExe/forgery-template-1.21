@@ -1,7 +1,6 @@
 package net.end.forgery.item;
 
 import net.end.forgery.Forgery;
-import net.end.forgery.item.custom.BlockInteractionRangeTool;
 import net.end.forgery.item.custom.VeinminerToolItemTwo;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -25,6 +24,8 @@ public class ModItems {
     public static final Item EDGE_OF_FRAILTY = registerItem("edge_of_frailty", (new net.end.forgery.item.custom.WeaknessSwordItem(ModToolMaterials.FORGERY_UPGRADED, (new Item.Settings()).rarity(Rarity.UNCOMMON).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 7, -2.5F)))));
     public static final Item ECHO_TRIDENT = registerItem("echo_trident", (new net.minecraft.item.TridentItem (new Item.Settings())));
     public static final Item NETHERITE_SHIELD = registerItem("netherite_shield", (new net.minecraft.item.ShieldItem (new Item.Settings())));
+    public static final Item ENDER_BOW = registerItem("ender_bow", (new net.minecraft.item.BowItem (new Item.Settings())));
+    public static final Item SWIRLING_WINDS = registerItem("swirling_winds", (new net.minecraft.item.BowItem (new Item.Settings())));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Forgery.MOD_ID, name), item);
@@ -46,6 +47,8 @@ public class ModItems {
             entries.add(EDGE_OF_FRAILTY);
             entries.add(ECHO_TRIDENT);
             entries.add(NETHERITE_SHIELD);
+            entries.add(ENDER_BOW);
+            entries.add(SWIRLING_WINDS);
 
                 });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
