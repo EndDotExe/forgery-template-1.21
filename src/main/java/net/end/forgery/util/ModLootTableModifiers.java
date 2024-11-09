@@ -1,6 +1,5 @@
 package net.end.forgery.util;
 
-import net.end.forgery.Forgery;
 import net.end.forgery.item.ModItems;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.minecraft.entity.EntityType;
