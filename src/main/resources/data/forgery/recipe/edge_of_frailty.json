@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+   "addition": {
+   "item": "minecraft:wither_rose"
+   },
+    "base": {
+   "item": "minecraft:netherite_sword"
+  },
+    "result": {
+   "count": 1,
+   "id": "forgery:edge_of_frailty"
+  },
+   "template": {
+   "item": "forgery:smithing_template_wi"
+  }
+}

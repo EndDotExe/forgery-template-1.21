@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.Map;
 
-public class VeinminerToolItem extends ToolItem {
+public class VeinminerToolItem extends PickaxeItem {
     private static final Map<Block, Block> VEINMINERTOOL_MAP =
             Map.ofEntries(
                     Map.entry(Blocks.COAL_ORE, Blocks.AIR),

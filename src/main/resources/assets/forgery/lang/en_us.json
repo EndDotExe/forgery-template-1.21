@@ -13,7 +13,7 @@
   "item.forgery.edge_of_frailty": "Edge of Frailty",
   "item.forgery.echo_trident": "Echo Trident",
   "item.forgery.netherite_shield": "Netherite Shield",
-  "item.forgery.ender_bow": "End Bow (placeholder name)",
+  "item.forgery.ender_bow": "Eye of Tempest",
   "item.forgery.swirling_winds": "Swirling Winds",
 
   "block.forgery.smithing_table_ex": "Netherite Smithing Table",
@@ -22,8 +22,28 @@
   "tooltip.forgery.veinminertool_two":  "§7Destroying all ores of the same",
   "tooltip.forgery.veinminertool_three":  "§7variety connected to the ore",
   "tooltip.forgery.veinminertool_four":  "§7which was interacted with.",
-  "tooltip.forgery.veinminertool_notworkingyet":  "§c§lTHIS FEATURE DOESN'T WORK YET!",
+  "tooltip.forgery.veinminertool_notworkingyet":  "§cTHIS FEATURE DOESN'T WORK AS INTENDED YET!",
   "tooltip.forgery.veinminertool_pressshiftdumbass": "§7Hold §e§lShift §7for tool info",
+
+  "tooltip.forgery.smithing_template_ex": "§7Used to craft the §bExcavator Tools",
+  "tooltip.forgery.smithing_template_ex_two": "§7Uses §9Lapis, §dAmethyst, §cRedstone & §aEmerald",
+  "tooltip.forgery.smithing_template_ex_three": "§7Applied to a §bNetherite Pickaxe",
+
+  "tooltip.forgery.smithing_template_gc": "§7Used to craft the §bGuardian Tridents",
+  "tooltip.forgery.smithing_template_gc_two": "§7Uses §bCopper Ingots, §3Echo shards §7& §bHearts of the Sea",
+  "tooltip.forgery.smithing_template_gc_three": "§7Applied to a §bTrident",
+
+  "tooltip.forgery.smithing_template_wi": "§7Used to craft the §bWrathful Blades",
+  "tooltip.forgery.smithing_template_wi_two": "§7Uses §4Spider Eyes, §9Blue Ice §7& §8Wither Roses",
+  "tooltip.forgery.smithing_template_wi_three": "§7Applied to a §bNetherite Sword",
+
+  "tooltip.forgery.smithing_template_fl": "§7Used to craft the §bTriumphant Bows",
+  "tooltip.forgery.smithing_template_fl_two": "§7Uses §5Eyes of Ender, §9Breeze Rods §7& §fPhantom Membranes",
+  "tooltip.forgery.smithing_template_fl_three": "§7Applied to a §bBow",
+
+  "tooltip.forgery.smithing_template_ph": "§7Used to craft the §b§lPhalanx's Shields",
+  "tooltip.forgery.smithing_template_ph_two": "§7Uses §6Gold Ingots, §eBlaze Rods §7& §8Netherite Ingots",
+  "tooltip.forgery.smithing_template_ph_three": "§7Applied to a §bShield",
 
   "itemgroup.forgery.all_forgery_items": "Forgery"
 }
