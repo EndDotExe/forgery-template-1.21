@@ -10,11 +10,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 // All the items in the mod & their properties
 public class ModItems {
-    public static final Item SMITHING_TEMPLATE_EX = registerItem("smithing_template_ex", new Item (new Item.Settings().rarity(Rarity.EPIC)));
-    public static final Item SMITHING_TEMPLATE_PH = registerItem("smithing_template_ph", new Item (new Item.Settings().rarity(Rarity.UNCOMMON)));
-    public static final Item SMITHING_TEMPLATE_GC = registerItem("smithing_template_gc", new Item (new Item.Settings().rarity(Rarity.RARE)));
-    public static final Item SMITHING_TEMPLATE_WI = registerItem("smithing_template_wi", new Item (new Item.Settings().rarity(Rarity.RARE)));
-    public static final Item SMITHING_TEMPLATE_FL = registerItem("smithing_template_fl", new Item (new Item.Settings().rarity(Rarity.EPIC)));
+    public static final Item SMITHING_TEMPLATE_EX = registerItem("smithing_template_ex", new net.end.forgery.item.custom.ModSmithingTemplateItem (new Item.Settings().rarity(Rarity.EPIC)));
+    public static final Item SMITHING_TEMPLATE_PH = registerItem("smithing_template_ph", new net.end.forgery.item.custom.ModSmithingTemplateItem (new Item.Settings().rarity(Rarity.UNCOMMON)));
+    public static final Item SMITHING_TEMPLATE_GC = registerItem("smithing_template_gc", new net.end.forgery.item.custom.ModSmithingTemplateItem (new Item.Settings().rarity(Rarity.RARE)));
+    public static final Item SMITHING_TEMPLATE_WI = registerItem("smithing_template_wi", new net.end.forgery.item.custom.ModSmithingTemplateItem (new Item.Settings().rarity(Rarity.RARE)));
+    public static final Item SMITHING_TEMPLATE_FL = registerItem("smithing_template_fl", new net.end.forgery.item.custom.ModSmithingTemplateItem (new Item.Settings().rarity(Rarity.EPIC)));
     public static final Item LAPIS_EXCAVATOR_PICKAXE = registerItem("lapis_excavator_pickaxe", (new net.end.forgery.item.custom.VeinminerToolItem(ModToolMaterials.FORGERY_UPGRADED, (new Item.Settings()).rarity(Rarity.EPIC).attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 1.0F, -2.8F)))));
     public static final Item AMETHYST_EXCAVATOR_PICKAXE = registerItem("amethyst_excavator_pickaxe", (new net.end.forgery.item.custom.BlockInteractionRangeTool(ModToolMaterials.FORGERY_UPGRADED, (new Item.Settings()).rarity(Rarity.EPIC).attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 1.0F, -2.8F )))));
     public static final Item REDSTONE_EXCAVATOR_PICKAXE = registerItem("redstone_excavator_pickaxe", (new net.minecraft.item.PickaxeItem(ModToolMaterials.FORGERY_INSTATOOL, (new Item.Settings()).rarity(Rarity.EPIC).attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 1.0F, -2.8F )))));
