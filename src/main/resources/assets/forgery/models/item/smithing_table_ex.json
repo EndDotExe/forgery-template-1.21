@@ -1,7 +1,0 @@
-{
-  "parent": "forgery:block/generated",
-  "textures": {
-    "all": "forgery:block/smithing_table_ex"
-  }
-
-}

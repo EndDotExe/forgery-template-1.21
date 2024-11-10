@@ -4,15 +4,21 @@
   "item.forgery.smithing_template_gc": "Smithing Template",
   "item.forgery.smithing_template_fl": "Smithing Template",
   "item.forgery.smithing_template_wi": "Smithing Template",
+
   "item.forgery.lapis_excavator_pickaxe": "Lapis Excavator Pickaxe",
   "item.forgery.amethyst_excavator_pickaxe": "Amethyst Excavator Pickaxe",
   "item.forgery.redstone_excavator_pickaxe": "Redstone Excavator Pickaxe",
   "item.forgery.emerald_excavator_pickaxe": "Emerald Excavator Pickaxe",
+
   "item.forgery.blighted_blade": "Blighted Blade",
   "item.forgery.frigid_flamberge": "Frigid Flamberge",
   "item.forgery.edge_of_frailty": "Edge of Frailty",
+  "item.forgery.vitality_thief": "Vitality Thief",
+
   "item.forgery.echo_trident": "Echo Trident",
+
   "item.forgery.netherite_shield": "Netherite Shield",
+
   "item.forgery.ender_bow": "Eye of Tempest",
   "item.forgery.swirling_winds": "Swirling Winds",
 
@@ -30,7 +36,7 @@
   "tooltip.forgery.smithing_template_ex_three": "§7Applied to a §bNetherite Pickaxe",
 
   "tooltip.forgery.smithing_template_gc": "§7Used to craft the §bGuardian Tridents",
-  "tooltip.forgery.smithing_template_gc_two": "§7Uses §bCopper Ingots, §3Echo shards §7& §bHearts of the Sea",
+  "tooltip.forgery.smithing_template_gc_two": "§7Uses §6Copper Ingots, §3Echo shards §7& §bHearts of the Sea",
   "tooltip.forgery.smithing_template_gc_three": "§7Applied to a §bTrident",
 
   "tooltip.forgery.smithing_template_wi": "§7Used to craft the §bWrathful Blades",
@@ -41,7 +47,7 @@
   "tooltip.forgery.smithing_template_fl_two": "§7Uses §5Eyes of Ender, §9Breeze Rods §7& §fPhantom Membranes",
   "tooltip.forgery.smithing_template_fl_three": "§7Applied to a §bBow",
 
-  "tooltip.forgery.smithing_template_ph": "§7Used to craft the §b§lPhalanx's Shields",
+  "tooltip.forgery.smithing_template_ph": "§7Used to craft the §bPhalanx's Shields",
   "tooltip.forgery.smithing_template_ph_two": "§7Uses §6Gold Ingots, §eBlaze Rods §7& §8Netherite Ingots",
   "tooltip.forgery.smithing_template_ph_three": "§7Applied to a §bShield",
 

@@ -1,0 +1,38 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "forgery:item/vampirte_sword"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 48],
+			"translation": [0, 13, 2.75],
+			"scale": [2, 2, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, -48],
+			"translation": [0, 13, 2.75],
+			"scale": [2, 2, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 90, 45],
+			"translation": [0, 11, 0],
+			"scale": [2, 2, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -90, -45],
+			"translation": [0, 11, 0],
+			"scale": [2, 2, 1]
+		},
+		"ground": {
+			"translation": [0, 9.75, 0],
+			"scale": [2, 2, 1]
+		},
+		"head": {
+			"rotation": [0, 0, 46],
+			"translation": [0, 13.5, 0],
+			"scale": [2.3, 2.3, 1]
+		}
+	}
+}
