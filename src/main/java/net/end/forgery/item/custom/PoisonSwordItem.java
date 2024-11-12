@@ -4,6 +4,10 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
+import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.text.Text;
+
+import java.util.List;
 
 public class PoisonSwordItem extends SwordItem {
 
@@ -19,6 +23,10 @@ public class PoisonSwordItem extends SwordItem {
             target.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 40, 3), attacker);
         }
         return super.postHit(stack, target, attacker);
+    }
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        tooltip.add(Text.translatable("tooltip.forgery.blighted_blade"));
     }
 }
 

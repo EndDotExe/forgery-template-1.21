@@ -31,6 +31,8 @@
   "tooltip.forgery.veinminertool_notworkingyet":  "§cTHIS FEATURE DOESN'T WORK AS INTENDED YET!",
   "tooltip.forgery.veinminertool_pressshiftdumbass": "§7Hold §e§lShift §7for tool info",
 
+  "tooltip.forgery.redstone_excavator": "§7Instamines most blocks.",
+
   "tooltip.forgery.smithing_template_ex": "§7Used to craft the §bExcavator Tools",
   "tooltip.forgery.smithing_template_ex_two": "§7Uses §9Lapis, §dAmethyst, §cRedstone §7& §aEmerald",
   "tooltip.forgery.smithing_template_ex_three": "§7Applied to a §bNetherite Pickaxe",
@@ -50,6 +52,14 @@
   "tooltip.forgery.smithing_template_ph": "§7Used to craft the §bPhalanx's Shields",
   "tooltip.forgery.smithing_template_ph_two": "§7Uses §6Gold Ingots, §eBlaze Rods §7& §8Netherite Ingots",
   "tooltip.forgery.smithing_template_ph_three": "§7Applied to a §bShield",
+
+  "tooltip.forgery.edge_of_frailty": "§7A Blade which diminishes the strength of your foes,",
+  "tooltip.forgery.edge_of_frailty_two": "§7reducing their contact damage drastically.",
+
+  "tooltip.forgery.blighted_blade": "§7A Blade which poisons your foes",
+
+  "tooltip.forgery.frigid_flamberge": "§7A Blade which freezes your enemies,",
+  "tooltip.forgery.frigid_flamberge_two": "§7reducing their movement speed significantly.",
 
   "itemgroup.forgery.all_forgery_items": "Forgery"
 }

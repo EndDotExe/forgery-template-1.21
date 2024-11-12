@@ -4,10 +4,15 @@ import net.end.forgery.Forgery;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+
+import java.util.List;
+
 // All the items in the mod & their properties
 public class ModItems {
     public static final Item SMITHING_TEMPLATE_EX = registerItem("smithing_template_ex", new net.end.forgery.item.custom.ModSmithingTemplateItem (new Item.Settings().rarity(Rarity.EPIC)));
@@ -30,6 +35,11 @@ public class ModItems {
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Forgery.MOD_ID, name), item);
+    }
+    public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+        if (stack.getItem() == REDSTONE_EXCAVATOR_PICKAXE) {
+        tooltip.add(Text.translatable("tooltip.forgery.redstone_excavator"));
+        }
     }
 // Adding items to their respective item groups
     public static void registerModItems() {
@@ -60,6 +70,7 @@ public class ModItems {
             entries.add(SMITHING_TEMPLATE_WI);
             entries.add(SMITHING_TEMPLATE_FL);
         });
+
     }
 }
 

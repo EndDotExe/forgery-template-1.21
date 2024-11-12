@@ -21,4 +21,8 @@ public class ModEntities {
     public static void registerEntities(net.end.forgery.entity.custom.WindArrowEntity windArrowEntity) {
         // Register other entities here
     }
+
+    public static void registerModEntities() {
+        Forgery.LOGGER.info("Registering Mod Entities for " + Forgery.MOD_ID);
+    }
 }

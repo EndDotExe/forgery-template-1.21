@@ -1,5 +1,6 @@
 package net.end.forgery;
 
+import net.end.forgery.entity.ModEntities;
 import net.end.forgery.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 import net.end.forgery.item.ModItems;
@@ -31,6 +32,10 @@ public class Forgery implements ModInitializer {
 		// Register loot table modifiers
 		LOGGER.info("Registering Loot Table Modifiers");
 		ModLootTableModifiers.registerModLootTableModifiers();
+
+		// Register mod projectiles
+		LOGGER.info("Registering Entities");
+		ModEntities.registerModEntities();
 
 		LOGGER.info("Forgery Mod Initialization Complete");
 	}
