@@ -1,6 +1,8 @@
 package net.end.forgery;
 
+import net.end.forgery.entity.ModEntities;
 import net.end.forgery.util.ModLootTableModifiers;
+import net.end.forgery.util.VeinMinerUsageEvent;
 import net.fabricmc.api.ModInitializer;
 import net.end.forgery.item.ModItems;
 import net.end.forgery.block.ModBlocks;
@@ -32,6 +34,15 @@ public class Forgery implements ModInitializer {
 		LOGGER.info("Registering Loot Table Modifiers");
 		ModLootTableModifiers.registerModLootTableModifiers();
 
+		// Register mod projectiles
+		LOGGER.info("Registering Entities");
+		ModEntities.registerModEntities();
+
+
+
+		// Register vein miner usage event
+				VeinMinerUsageEvent.register();
+
 		LOGGER.info("Forgery Mod Initialization Complete");
+			}
 	}
-}

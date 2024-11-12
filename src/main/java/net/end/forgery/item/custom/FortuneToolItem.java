@@ -6,6 +6,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.world.World;
 
 public class FortuneToolItem extends ToolItem {
@@ -17,6 +18,7 @@ public class FortuneToolItem extends ToolItem {
 DataComponentTypes getDataComponentType(ItemStack stack) {
         return null;
 }
+
 
 }
 

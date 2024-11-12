@@ -24,12 +24,14 @@
 
   "block.forgery.smithing_table_ex": "Netherite Smithing Table",
 
-  "tooltip.forgery.veinminertool":  "§7Right click an ore to §bVEINMINE,",
-  "tooltip.forgery.veinminertool_two":  "§7Destroying all ores of the same",
-  "tooltip.forgery.veinminertool_three":  "§7variety connected to the ore",
-  "tooltip.forgery.veinminertool_four":  "§7which was interacted with.",
-  "tooltip.forgery.veinminertool_notworkingyet":  "§cTHIS FEATURE DOESN'T WORK AS INTENDED YET!",
+  "tooltip.forgery.veinminertool":  "§7A Pickaxe with the ability to §bVEINMINE,",
+  "tooltip.forgery.veinminertool_two":  "§7Destroying all ores of the same variety",
+  "tooltip.forgery.veinminertool_three":  "§7connected to the ore which was broken.",
+
+
   "tooltip.forgery.veinminertool_pressshiftdumbass": "§7Hold §e§lShift §7for tool info",
+
+  "tooltip.forgery.redstone_excavator": "§7Instamines most blocks.",
 
   "tooltip.forgery.smithing_template_ex": "§7Used to craft the §bExcavator Tools",
   "tooltip.forgery.smithing_template_ex_two": "§7Uses §9Lapis, §dAmethyst, §cRedstone §7& §aEmerald",
@@ -51,5 +53,16 @@
   "tooltip.forgery.smithing_template_ph_two": "§7Uses §6Gold Ingots, §eBlaze Rods §7& §8Netherite Ingots",
   "tooltip.forgery.smithing_template_ph_three": "§7Applied to a §bShield",
 
-  "itemgroup.forgery.all_forgery_items": "Forgery"
+  "tooltip.forgery.edge_of_frailty": "§7Cripples struck foes,",
+  "tooltip.forgery.edge_of_frailty_two": "§7Reducing their contact damage drastically",
+
+  "tooltip.forgery.blighted_blade": "§7Poisons struck enemies",
+
+  "tooltip.forgery.frigid_flamberge": "§7Freezes struck enemies,",
+  "tooltip.forgery.frigid_flamberge_two": "§7Reducing their movement speed significantly",
+
+  "itemgroup.forgery.all_forgery_items": "Forgery",
+
+  "advancements.smithing_template_title": "A New Set of Upgrades",
+  "advancements.smithing_template_description": "Obtain a weapon smithing template from a powerful foe"
 }

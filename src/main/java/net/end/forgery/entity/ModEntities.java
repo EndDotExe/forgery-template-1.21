@@ -13,12 +13,16 @@ public class ModEntities {
     public static final EntityType<WindArrowEntity> WIND_ARROW_ENTITY = Registry.register(
             Registries.ENTITY_TYPE,
             Identifier.of(Forgery.MOD_ID, "wind_arrow"),
-            EntityType.Builder.<WindArrowEntity>create(WindArrowEntity::new, SpawnGroup.MISC)
+            EntityType.Builder.<WindArrowEntity>create((entityType, world) -> new WindArrowEntity(world), SpawnGroup.MISC)
                     .dimensions(0.5F, 0.5F)
                     .build()
     );
 
     public static void registerEntities(net.end.forgery.entity.custom.WindArrowEntity windArrowEntity) {
         // Register other entities here
+    }
+
+    public static void registerModEntities() {
+        Forgery.LOGGER.info("Registering Mod Entities for " + Forgery.MOD_ID);
     }
 }

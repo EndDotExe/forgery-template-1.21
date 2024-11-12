@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.Map;
 
-public class VeinminerToolItem extends PickaxeItem {
+public class VeinminerToolItemOld extends PickaxeItem {
     private static final Map<Block, Block> VEINMINERTOOL_MAP =
             Map.ofEntries(
                     Map.entry(Blocks.COAL_ORE, Blocks.AIR),
@@ -39,7 +39,7 @@ public class VeinminerToolItem extends PickaxeItem {
 
             );
 
-    public VeinminerToolItem(ToolMaterial toolMaterial, Settings settings) {
+    public VeinminerToolItemOld(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings);
     }
 
@@ -66,7 +66,6 @@ public class VeinminerToolItem extends PickaxeItem {
             tooltip.add(Text.translatable("tooltip.forgery.veinminertool_two"));
             tooltip.add(Text.translatable("tooltip.forgery.veinminertool_three"));
             tooltip.add(Text.translatable("tooltip.forgery.veinminertool_four"));
-            tooltip.add(Text.translatable("tooltip.forgery.veinminertool_notworkingyet"));
 // Giving the tool a tooltip that requires the SHIFT key to be held down to display the information
         } else {
             tooltip.add(Text.translatable("tooltip.forgery.veinminertool_pressshiftdumbass"));
