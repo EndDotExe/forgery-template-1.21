@@ -1,5 +1,6 @@
 package net.end.forgery.item.custom;
 
+import net.end.forgery.util.ModTags;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -35,6 +36,9 @@ public class VeinminerToolItemTwo extends MiningToolItem {
     public void onBlockBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
         if (!world.isClient && player.getMainHandStack().getItem() instanceof VeinminerToolItemTwo) {
             mineConnectedBlocks((ServerWorld) world, pos, state.getBlock(), player, 0);
+            {
+                world.breakBlock(pos, true, player);
+            }
         }
     }
 
@@ -46,7 +50,7 @@ public class VeinminerToolItemTwo extends MiningToolItem {
         for (Direction direction : Direction.values()) {
             BlockPos adjacentPos = pos.offset(direction);
             BlockState adjacentState = world.getBlockState(adjacentPos);
-            if (adjacentState.getBlock() == block) {
+            if (adjacentState.isIn(ModTags.Blocks.ORES)) {
                 world.breakBlock(adjacentPos, true, player);
                 blocksBroken++;
                 if (blocksBroken >= BLOCK_BREAK_LIMIT) {

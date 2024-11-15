@@ -20,4 +20,5 @@ public class VeinMinerUsageEvent {
         }
         return true;
     }
+
 }
