@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:blaze_rod"
+  },
+  "base": {
+    "item": "minecraft:shield"
+  },
+  "result": {
+    "count": 1,
+    "id": "forgery:blaze_shield"
+  },
+  "template": {
+    "item": "forgery:smithing_template_ph"
+  }
+}
