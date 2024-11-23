@@ -1,6 +1,7 @@
 package net.end.forgery;
 
 import net.end.forgery.entity.ModEntities;
+import net.end.forgery.util.BlazeShieldUsageEvent;
 import net.end.forgery.util.ModLootTableModifiers;
 import net.end.forgery.util.VeinMinerUsageEvent;
 import net.fabricmc.api.ModInitializer;
@@ -40,8 +41,9 @@ public class Forgery implements ModInitializer {
 
 
 
-		// Register vein miner usage event
+		// Registering UsageEvents
 				VeinMinerUsageEvent.register();
+				BlazeShieldUsageEvent.register();
 
 		LOGGER.info("Forgery Mod Initialization Complete");
 			}

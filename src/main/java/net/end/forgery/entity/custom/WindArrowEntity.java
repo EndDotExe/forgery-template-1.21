@@ -1,26 +1,33 @@
 package net.end.forgery.entity.custom;
 
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.projectile.AbstractWindChargeEntity;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.entity.projectile.ArrowEntity;
+import net.minecraft.util.hit.EntityHitResult;
+import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import net.minecraft.world.explosion.AdvancedExplosionBehavior;
-import net.minecraft.world.explosion.ExplosionBehavior;
+import net.minecraft.world.explosion.Explosion;
 
-import java.util.Optional;
-import java.util.function.Function;
-
-public class WindArrowEntity extends AbstractWindChargeEntity {
-    public WindArrowEntity(World world) {
-        super(EntityType.WIND_CHARGE, world);
+public class WindArrowEntity extends ArrowEntity {
+    public WindArrowEntity(EntityType<? extends ArrowEntity> entityType, World world) {
+        super(entityType, world);
     }
 
     @Override
-    protected void createExplosion(Vec3d pos) {
-        final ExplosionBehavior EXPLOSION_BEHAVIOR = new AdvancedExplosionBehavior(
-                false, true, Optional.of(10.0F), Registries.BLOCK.getEntryList(BlockTags.BLOCKS_WIND_CHARGE_EXPLOSIONS).map(Function.identity())
-        );
+    protected void onEntityHit(EntityHitResult entityHitResult) {
+        super.onEntityHit(entityHitResult);
+        createExplosion(this.getPos());
+        this.discard();
+    }
+
+    @Override
+    protected void onBlockHit(BlockHitResult blockHitResult) {
+        super.onBlockHit(blockHitResult);
+        createExplosion(this.getPos());
+        this.discard();
+    }
+
+    private void createExplosion(Vec3d pos) {
+        this.getWorld().createExplosion(this, pos.x, pos.y, pos.z, 2.0F, World.ExplosionSourceType.MOB);
     }
 }

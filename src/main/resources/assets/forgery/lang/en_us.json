@@ -13,23 +13,20 @@
   "item.forgery.blighted_blade": "Blighted Blade",
   "item.forgery.frigid_flamberge": "Frigid Flamberge",
   "item.forgery.edge_of_frailty": "Edge of Frailty",
-  "item.forgery.terra_blade": "The Terra Blade from Terraria (real)",
+  "item.forgery.terra_blade": "The Actual Freaking Terra Blade from the hit indie game Terraria (not clickbait)",
 
   "item.forgery.echo_trident": "Echo Trident",
 
   "item.forgery.netherite_shield": "Netherite Shield",
+  "item.forgery.goldshield": "Golden Shield",
+  "item.forgery.blaze_shield": "Bulwark of Cinders",
 
   "item.forgery.ender_bow": "Eye of Tempest",
   "item.forgery.swirling_winds": "Swirling Winds",
 
-  "block.forgery.smithing_table_ex": "Netherite Smithing Table",
-
   "tooltip.forgery.veinminertool":  "§7A Pickaxe with the ability to §bVEINMINE,",
   "tooltip.forgery.veinminertool_two":  "§7Destroying all ores of the same variety",
   "tooltip.forgery.veinminertool_three":  "§7connected to the ore which was broken.",
-
-
-
   "tooltip.forgery.veinminertool_pressshiftdumbass": "§7Hold §e§lShift §7for tool info",
 
   "tooltip.forgery.redstone_excavator": "§7Instamines most blocks.",
@@ -43,6 +40,7 @@
   "tooltip.forgery.smithing_template_gc_three": "§7Applied to a §bTrident",
 
   "tooltip.forgery.smithing_template_wi": "§7Used to craft the §bWrathful Blades",
+
   "tooltip.forgery.smithing_template_wi_two": "§7Uses §4Spider Eyes, §9Blue Ice §7& §8Wither Roses",
   "tooltip.forgery.smithing_template_wi_three": "§7Applied to a §bNetherite Sword",
 
@@ -62,7 +60,11 @@
   "tooltip.forgery.frigid_flamberge": "§7Freezes struck enemies,",
   "tooltip.forgery.frigid_flamberge_two": "§7Reducing their movement speed significantly",
 
+  "tooltip.forgery.blaze_shield": "§7Fires §eFireballs §7at struck enemies while held ",
+  "tooltip.forgery.blaze_shield_two": "§6§lYour guard will never be broken",
+
   "itemgroup.forgery.all_forgery_items": "Forgery",
+  "itemgroup.forgeryfunnies": "Forgery Funsies :3",
 
   "advancements.smithing_template_title": "A New Set of Upgrades",
   "advancements.smithing_template_description": "Obtain a weapon smithing template from a powerful foe"

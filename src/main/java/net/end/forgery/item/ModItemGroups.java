@@ -31,13 +31,27 @@ public class ModItemGroups {
                         entries.add(ModItems.FRIGID_FLAMBERGE);
                         entries.add(ModItems.EDGE_OF_FRAILTY);
                         entries.add(ModItems.ECHO_TRIDENT);
+                        entries.add(ModItems.COPPER_TRIDENT);
                         entries.add(ModItems.NETHERITE_SHIELD);
+                        entries.add(ModItems.GOLD_SHIELD);
+                        entries.add(ModItems.BLAZE_SHIELD);
                         entries.add(ModItems.ENDER_BOW);
                         entries.add(ModItems.SWIRLING_WINDS);
 
 
                     })
                     .build());
+    public static final ItemGroup FORGERY_FUNSIES = Registry.register(
+            Registries.ITEM_GROUP,
+            Identifier.of(Forgery.MOD_ID, "forgeryfunnies"),
+            FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(ModItems.TERRA_BLADE))
+                    .displayName(Text.translatable("itemgroup.forgeryfunnies"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.TERRA_BLADE);
+                    })
+                    .build()
+);
 
 
 

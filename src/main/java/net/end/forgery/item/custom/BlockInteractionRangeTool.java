@@ -21,5 +21,6 @@ public class BlockInteractionRangeTool extends PickaxeItem {
         Vec3d blockPos = new Vec3d(pos.getX(), pos.getY(), pos.getZ());
         double distance = playerPos.distanceTo(blockPos);
         return distance <= INCREASED_RANGE && super.canMine(state, world, pos, player);
+
     }
 }
